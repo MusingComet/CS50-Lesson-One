@@ -2,7 +2,24 @@
 <html>
 	<head>
 		<title>Page One</title>
+		
 	</head>
 	<body>
-		This Is A Changed File To View (git diff cmd)</body>
+	  <div>
+	    <h1>a thing</h1>
+
+		<p>This Is A Twice-Changed File To View (git diff cmd)
+		</p>
+		<button type="submit" onclick="wipeClear();">press here</button>
+	  </div>
+<script>
+let text = document.getElementsByTagName('p')[0];
+function wipeClear(){
+  text.innerText ='tadaaa';
+};
+		</script>
+		
+		</body>
+		
+		
 </html>
