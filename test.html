@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Page One</title>
+	  <style type="text/css" media="all">
+	  
+	  
+	  body{
+	    margin:0;
+	    padding:0;
+	  }
+	  a{
+	    text-decoration:none;
+	    color:white;
+	  }
+	  
+	  h1{
+	    position:fixed;
+	    top:5%;
+	    left: 32%;
+	  }
+	  
+	   .rule{
+	    height:45%;
+	    width:10px;
+	    border-left:thick solid black;
+	    background-color:dodgerblue;
+	  }
+	 
+	  .options{
+	    margin:40% 0% 0% 3%;
+	    float:left;
+	    background:blue;
+	    padding:17px 15px 17px 15px;
+	    border-radius:3%;
+	    width:25%;
+	    
+	    
+	  }
+	  .recent{
+	    float:right;
+	    margin:40% 3% 0% 0%;
+	    background:blue;
+	    border-radius:3%;
+	    padding:17px 15px 17px 15px;
+	    width:25%
+	  }
+	  
+	  
+	    
+	  </style>
+		<title>todo</title>
 		
 	</head>
 	<body>
-	  <div>
-	    <h1>a thing</h1>
+	  <div class='line-wrap'>
+	    <h1>Todo.IO</h1>
 
-		<p>This Is A Twice-Changed File To View (git diff cmd)
-		</p>
-		<button type="submit" onclick="wipeClear();">press here</button>
-	  </div>
+		<div class='options'> 
+		<a href="#">create</a>
+		</div>
+		
+		
+		<div id ='review' class='recent'> <a>review</a>
+		</div>
+	<!--   <button type="submit" onclick="wipeClear();">press here</button>
+	   -->  </div>
 <script>
-let text = document.getElementsByTagName('p')[0];
-function wipeClear(){
-  text.innerText ='tadaaa';
+let r = document.getElementById('review');
+
+r.addEventListener('click', wipeClear);
+
+function wipeClear(e){
+  e.target.innerText = 'selected!';
 };
+
 		</script>
 		
 		</body>
